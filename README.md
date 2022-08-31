@@ -1,0 +1,7 @@
+# MP3 Downloader
+### Video Demo: 
+### Description: MP3 Downloader is a webpage that, as its name says, downloads videos from the Youtube platform in mp3 format. The backend of this page was written with python and flask as well as using the library pytube (https://pypi.org/project/pytube/). The GUI of this page follows a very simple design in which the user is asked to paste a link of a youtube video and then click on the "Download" button to get the desired output. The webpage handles user's bad inputs by re-rendering the webpage. It was decided to use pytube as it has an extensively documented source code and also because it is a lightweight and dependency-free library. 
+
+### test.py: test.py imports pytube, flask and os. Pytube will be used with os to complementate its functionality and to fully convert a youtube video to mp3 format and flask will be use re-render the webpage every time the user doesn't enter valid inputs. Here a function called "lookup", built with the libraries mentioned above, is defined to then be used in app.py.
+
+### app.py: app.py is where user's input is handled. It gives as an argument to the lookup function the result of a request method. When the process is successful, the page is refreshed.
